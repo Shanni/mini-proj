@@ -13,7 +13,7 @@ class LRUCache(object):
         """
         :rtype: int
         """
-        return self.d[key]
+        return self.d.get(key,None)
         
 
     def set(self, key, value):
